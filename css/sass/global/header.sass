@@ -1,0 +1,363 @@
+$font-primary: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+$colorFB: #3a5897
+$colorTW: #2795e9
+$colorYT: #DC2725
+$colorIN: #3f729b
+$colorTL: #0088cc
+$colorSP: #1DB954
+.navbar-header
+    position: fixed
+    padding-top: 1%
+    width: 100%
+    transition-property: padding, background
+    transition-duration: .35s
+    transition-delay: .1s
+    height: 60px
+    background: rgba(0, 0, 0 , .8)
+    @include medium
+        padding-top: 1%
+        height: 60px
+    @include tablet
+        padding-top: 2%
+        background: transparent
+    @include desktop
+        height: inherit
+       
+    @include x-largue
+    margin: 0 auto
+    left: 0
+    right: 0
+    z-index: 9
+    .nav-container.active
+        left: 0
+        transition: left .5s ease-in-out
+        transition-delay: 0s
+    .nav-container
+        display: block
+        transition: left .5s ease-in-out
+        transition-delay: 0s
+        background: rgba(0,0,0,1)
+        padding-left: 0
+        padding-right: 0
+        border-radius: 6px
+        position: relative
+        margin-top: 11px
+        left: -100%
+        z-index: 352
+        @include medium
+            left: -100%
+        @include tablet
+            left: 0%
+            margin-top: 0px
+            background: rgba(0,0,0,1)
+        .menu-nav
+            list-style: none
+            padding: 1.5em 0
+            margin-bottom: 0
+            display: block
+            vertical-align: middle
+            align-items: stretch
+            position: relative
+            @include medium
+                display: block
+                padding: 1em 0
+            @include tablet
+                display: flex
+                padding: 0
+            .item-menu
+                padding-top: 6px
+                padding-bottom: 6px
+                width: 100%
+                padding-left: 12px
+                padding-right: 12px
+                text-align: left
+                line-height: 16px
+                display: block
+                align-content: center
+                flex-wrap: wrap
+                position: relative
+                @include medium
+                    display: block
+                @include tablet
+                    padding-top: 12px
+                    padding-bottom: 12px
+                    display: flex
+                    text-align: center
+                    width: max-content
+                    &:hover
+                        background: $primary
+                        .submenu-box
+                                /*display: block*/
+                                max-height: 700px
+                                transition: max-height .1s ease-in
+                                -moz-transition: max-height .1s ease-in
+                                -webkit-transition: max-height .1s ease-in
+                                -o-transition: max-height .1s ease-in
+                    &:nth-child(1)
+                        border-top-left-radius: 6px
+                        border-bottom-left-radius: 6px
+                    &:nth-last-child(1)
+                        border-top-right-radius: 6px
+                        border-bottom-right-radius: 6px
+                    &:after
+                        background: transparent
+                &:after
+                    content: ''
+                    transform: translateY(38%)
+                    position: absolute
+                    width: 0.5px
+                    background: #fff
+                    height: 38%
+                    right: 0
+                    display: none
+                    @include movil
+                        display: none
+                    @include tablet
+                        display: block
+                &:nth-child(1), &:nth-last-child(1)
+                    &:after
+                        display: none
+                .link-item
+                    color: #fff
+                    text-decoration: none
+                    cursor: pointer
+                    font-family: $font-primary
+                    font-size: 17px
+                    position: relative
+                    display: block
+                    @include desktop
+                        font-size: 14px
+                    @include x-largue
+                        font-size: 16px  
+                .submenu-box
+                    background: #fff
+                    top: 100%
+                    left: 0
+                    position: relative
+                    /*display: none*/
+                    overflow: hidden
+                    width: 300px
+                    z-index: 9
+                    max-height: 0px
+                    transition: max-height .5s ease-in-out
+                    -moz-transition: max-height .5s ease-in-out
+                    -webkit-transition: max-height .5s ease-in-out
+                    -o-transition: max-height .5s ease-in-out
+                    margin-top: 8px
+                    @include movil
+                        width: 250px
+                    @include medium
+                        position: relative
+                        top: 8px
+                    @include tablet
+                        position: absolute
+                        top: 100%
+                        margin-top: 0px
+                        transition: max-height .1s ease-in-out
+                        -moz-transition: max-height .1s ease-in-out
+                        -webkit-transition: max-height .1s ease-in-out
+                        -o-transition: max-height .1s ease-in-out
+                        filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.1))
+                    .submenu
+                        list-style: none
+                        padding-left: 0
+                        text-align: left
+                        .submenu-link-item
+                            a
+                                color: #000
+                                text-decoration: none
+                                padding: 0.5em 1em
+                                display: block
+                                font-size: 16px
+                                @include medium
+                                    padding: 0.5em 1em
+                                    font-size: 14px
+                                @include tablet
+                                    padding: 1em
+                                
+                                &:hover
+                                    background: $primary
+                                    color: #fff
+                .submenu-box.active
+                    max-height: 900px
+                .submenu-box.multiple
+                    display: flex
+                    width: auto
+                    @include tablet
+                        width: 500px
+    #text_plugin
+        background: transparent !important
+    .nav-actions
+        position: relative
+        padding-top: 15px
+        padding-bottom: 15px
+        //left: -100%
+        display: none
+        @include medium
+            //left: -100%
+            display: none
+        @include tablet
+            left: 0%
+            display: block
+        .link-action
+            color: #fff
+            text-decoration: none
+            font-weight: 700
+            display: block
+            padding-top: 6px
+            font-family: $font-primary
+            @include desktop
+                font-size: 14px
+            @include x-largue
+                font-size: 16px
+        .form-control
+            border-radius: 0px
+            border: 0
+            border-top-left-radius: 6px
+            border-bottom-left-radius: 6px
+            @include desktop
+                font-size: 14px
+            @include x-largue
+                font-size: 16px
+            &:focus
+                border-color: transparent
+                box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0)
+        .input-group-append
+            .form-control
+                border-radius: 0px
+                border: 0
+                border-top-right-radius: 6px
+                border-bottom-right-radius: 6px
+                background: #fff
+        .input-group
+            position: relative
+            display: flex
+            align-items: stretch
+            width: 100%
+    .mobile
+        position: relative
+        margin-top: 8px
+        .social-media-rss
+            margin-top: 8px
+        @include medium
+            display: block
+            margin-top: 0px
+        @include tablet
+            display: none
+        .hamburguess
+            color: #fff
+            margin-top: 6px
+            display: block
+            text-align: center
+        .form-control
+            border-radius: 0px
+            border: 0
+            border-top-left-radius: 6px
+            border-bottom-left-radius: 6px
+            @include desktop
+                font-size: 14px
+            @include x-largue
+                font-size: 16px
+            &:focus
+                border-color: transparent
+                box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0)
+        .input-group-append
+            .form-control
+                border-radius: 0px
+                border: 0
+                border-top-right-radius: 6px
+                border-bottom-right-radius: 6px
+                background: #fff
+.header-page
+    background: #484848
+
+.navbar-header.active,
+.nohomepage
+    background: transparent
+    padding: 0
+    padding-top: 0
+    .nav-container
+        background: $primary
+        top: 0
+    .nav-actions
+        background: #fff
+        padding-top: .5rem
+        padding-bottom: .5rem
+        border-bottom-left-radius: 6px
+        border-bottom-right-radius: 6px
+        filter: drop-shadow(0 15px 10px rgba(0,0,0,.1))
+        transition-property: background
+        transition-duration: .35s
+        transition-delay: .1s
+        .input-group
+            border: 1px solid $primary
+            border-radius: 6px
+        .link-action
+            color: $primary
+.banner-page
+    padding: 1em 0
+    background: url('../../media/images/cabecera-page.png') no-repeat center
+    background-size: cover
+    color: #fff
+    text-align: center
+    margin-bottom: 1em
+    @include movil
+        text-align: inherit
+    .title-banner
+        position: relative
+    .menu-banner
+        list-style: none
+        padding-left: 0
+        margin-bottom: 0
+        .item-menu
+            text-align: center
+            a
+                color: #fff
+                text-decoration: none
+        
+    .how-use
+        color: #fff
+        text-align: center
+        text-decoration: none
+        span
+            display: block
+            position: relative
+            margin-bottom: .75em
+
+.icon
+    font-size: 16px
+a
+    text-decoration: none
+
+.social-media-rss
+    display: none
+    flex-wrap: wrap
+    justify-content: center
+    @include tablet
+        display: flex
+        align-items: center
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: center
+        height: 100%
+    .icon-rss
+        margin: 0 5px
+        text-align: center
+        color: #fff
+        a
+            font-size: 1.25em
+            width: 32px
+            display: block
+            border-radius: 4px
+            background: #fff
+            color: #656565
+            border-radius: 50%
+        img
+            max-width: 28px
+            width: 100%
+            height: auto
+            margin-top: -4px
+            position: relative
+#accessibility-links
+    #text_plugin
+        display: none

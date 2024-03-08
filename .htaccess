@@ -1,0 +1,43 @@
+RewriteEngine on
+
+SetEnv TZ America/Mexico_City
+
+RewriteBase /65_diario/
+
+Options -Indexes
+
+DirectoryIndex index.html index.htm index.php
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-l
+
+RewriteRule ^(\w+)/?$ index.php?watch=$1
+RewriteRule ^(\w+)/(\w+)/?$ index.php?watch=$1&var1=$2
+RewriteRule ^(\w+)/(\w+)/(\w+)/?$ index.php?watch=$1&var1=$2&var2=$3
+RewriteRule ^(\w+)/(\w+)/(\w+)/(\w+)/?$ index.php?watch=$1&var1=$2&var2=$3&var3=$4
+RewriteRule ^(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/?$ index.php?watch=$1&var1=$2&var2=$3&var3=$4&var4=$5
+RewriteRule ^(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/?$ index.php?watch=$1&var1=$2&var2=$3&var3=$4&var4=$5&var5=$6
+RewriteRule ^(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/(\w+)/?$ index.php?watch=$1&var1=$2&var2=$3&var3=$4&var4=$5&var5=$6&var6=$7
+
+
+<ifmodule mod_expires.c>
+	Header set X-XSS-Protection "1; mode=block"
+	ExpiresActive On
+	ExpiresDefault A360
+	
+	<FilesMatch ".(gif|jpg|jpeg|png|swf)$">
+		ExpiresDefault A360
+		Header append Cache-Control "public"
+	</FilesMatch>
+
+	<FilesMatch ".(xml|txt|html)$">
+		ExpiresDefault A360
+		Header append Cache-Control "public"
+	</FilesMatch>
+
+	<FilesMatch ".(js|css)$">
+		ExpiresDefault A360
+		Header append Cache-Control "public"
+	</FilesMatch>
+</ifmodule>

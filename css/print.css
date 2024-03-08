@@ -1,0 +1,49 @@
+@media print  {
+	body { font-family: Verdana, Geneva, sans-serif; font-size: 12pt; line-height: 1.3; background: #FFF; color: #000; }
+	h1 { font-size: 24pt; }
+	h2 { font-size: 14pt; margin-top: 25px; }
+	header { display: none; }
+	.main { width: 960px; text-align: justify; }
+	footer { display: none; }
+	a:after { content:''; }
+	a[href]:after { content: none; }
+	ul, img, table { page-break-inside: auto; }
+	#backTop { display: none; }
+	.glyphicon .glyphicon-chevron-up { display: none; }
+	.audioplayer { display: none; }
+	#noImprimir, #icons-Socials { display: none; }
+	.panel { border: 1px solid transparent; }
+	.collapse { display: block; }
+	hr { margin-top: 10px; margin-bottom: 10px; border: 0; border-top: 1px solid #eee; }
+
+
+	/*
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		float: left;
+	}
+	.col-sm-12 { width: 100%; }
+	.col-sm-11 { width: 91.66666667%; }
+	.col-sm-10 { width: 83.33333333%; }
+	.col-sm-9 {	width: 75%; }
+	.col-sm-8 {	width: 66.66666667%; }
+	.col-sm-7 {	width: 58.33333333%; }
+	.col-sm-6 { width: 50%;	}
+	.col-sm-5 { width: 41.66666667%; }
+	.col-sm-4 { width: 33.33333333%; }
+	.col-sm-3 { width: 25%;	}
+	.col-sm-2 { width: 16.66666667%; }
+	.col-sm-1 { width: 8.33333333%;	}
+	*/
+}
+@page { size: 216mm 279mm; }
+/* Default left, right, top, bottom margin is 2cm */
+@page { margin: 1cm; }
+/* Left pages, a wider margin on the left */
+@page :left {
+	margin-left: 2cm;
+	margin-right: 1cm;
+}
+@page :right {
+	margin-left: 1cm;
+	margin-right: 2cm;
+}

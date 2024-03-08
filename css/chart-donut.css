@@ -1,0 +1,445 @@
+:root {
+	font-size: 18px;
+	font-family: 'Capriola', sans-serif;
+	line-height: 1.5;
+	--MORENA: #610200;
+	--PAN: #19589a;
+	--PRI: #5DA456;
+	--MC : #F38215;
+	--PVEM: #78d154;
+	--PT: #bb2a22;
+	--PES: #752F8B;
+	--PRD: #FFD807;
+	--SG: #A9AAAD;
+	--shadow-color: rgb(0 0 0, 0.5);
+}
+.titular {
+	display: block;
+	line-height: 60px;
+	margin: 0;
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-family: arial;
+	font-size: 25px;
+}
+.donut-chart-block .titular {
+	padding: 10px 0;
+}
+.horizontal-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.donut-chart-block {
+	background: #fff;
+	border-radius: 30px;
+	float: left;
+	width: 99.9%;
+	box-shadow: 0 0 10px 10px rgb(0 0 0 / 10%);
+	border: 1px solid rgb(0 0 0 / 15%);
+	 
+}
+.numPartidos a li {
+	position: relative;
+	width: calc((100% / 9) - 1.9px);
+	border-left: 1px solid #bbbbbb;
+	text-align: center;
+	background: #dcdcdc;
+	float: left;
+}
+.numPartidos a:first-child li{
+	width: calc((100% / 9) + 15px);
+	border: none;
+}
+.numPartidos a:last-child li{
+	border-radius: 0 0 28px 0;
+}
+.numPartidos a:hover > li {
+	background: #d2d2d2;
+	box-shadow: inset -14px -14px 10px -10px rgb(0 0 0 / 25%);
+}
+.numPartidosPorcentaje {
+	margin: 0;
+	font-family: arial;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.numPartidosPorcentaje i {
+	margin: 0;
+	font-size: 14px;
+	padding-right: 10px;
+}
+.containerData {
+	position: relative;
+	width: 100%;
+}
+.donut-chart {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 7% auto 15%;
+	border-radius: 100%;
+	box-shadow: 4px 4px 10px rgb(0 0 0 / 50%);
+	overflow: hidden;
+}
+p.center {
+	background: #fff;
+	position: absolute;
+	text-align: center;
+	font-size: 28px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 250px;
+	height: 250px;
+	margin: auto;
+	border-radius: 50%;
+	line-height: 35px;
+	padding: 22% 0 0;
+	box-shadow: inset 4px 4px 10px rgb(0 0 0 / 50%);
+}
+.center-date span.scnd-font-color {
+	line-height: 0; 
+}
+.recorte {
+	border-radius: 50%;
+	clip: rect(0px 400px 400px 200px);
+	clip-path: inset(0px 0px 0px 200px);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+.quesito {
+	border-radius: 50%;
+	clip: rect(0px 200px 400px 0px);
+	clip-path: inset(0px 200px 0px 0px);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	font-family: monospace;
+	font-size: 1.5rem;
+}
+.namesPartidos {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.namesPartidos span {
+	position: absolute;
+	font-size: 19px;
+	font-family: arial;
+	background-color: transparent;
+}
+.namesPartidos span p {
+	text-align: center;
+	position: relative;
+	margin: 0;
+	width: 100%;
+}
+.namesPartidos span.MORENA {
+	right: 4%;
+	bottom: 50%;
+	transform: translate(0, 50%);
+	color: #610200;
+}
+.namesPartidos span.PAN {
+	left: 25%;
+	bottom: -5%;
+	color: #19589a;
+}
+.namesPartidos span.PRI {
+	left: 9%;
+	bottom: 36%;
+	color: #5da456;
+}
+.namesPartidos span.MC {
+	left: 12%;
+	top: 23%;
+	color: #f38215;
+}
+.namesPartidos span.PVEM {
+	left: 17%;
+	top: 8%;
+	color: #78d154;
+}
+.namesPartidos span.PT {
+	left: 26%;
+	top: -5%;
+	color: #bb2a22;
+}
+.namesPartidos span.PES {
+	left: 34%;
+	top: -13%;
+	color: #752f8b;
+}
+.namesPartidos span.PRD {
+	left: 44%;
+	top: -15%;
+	color: #ffd807;
+	text-shadow: 0 0 1px #000, 0 0 1px rgb(0 0 0 / 40%);
+}
+.namesPartidos span.SG {
+	right: 39%;
+	top: -15%;
+	color: #a9aaad;
+}
+.logoPartido {
+	position: absolute;
+	margin: 0;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 45px;
+	top: -50px;
+	background-color: transparent;
+}
+.logoPartido.MORENA {
+	background-image: url(../images/iconos_partidos/MORENA_.png);
+	height: 75px;
+	top: -65px;
+}
+.logoPartido.PAN {
+	background-image: url(../images/iconos_partidos/PAN_.png);
+}
+.logoPartido.PRI {
+	background-image: url(../images/iconos_partidos/PRI_.png);
+}
+.logoPartido.MC {
+	background-image: url(../images/iconos_partidos/MC_.png);
+}
+.logoPartido.PVEM {
+	background-image: url(../images/iconos_partidos/PVEM_.png);
+}
+.logoPartido.PT {
+	background-image: url(../images/iconos_partidos/PT_.png);
+}
+.logoPartido.PES {
+	background-image: url(../images/iconos_partidos/PES_.png);
+}
+.logoPartido.PRD {
+	background-image: url(../images/iconos_partidos/PRD_.png);
+}
+.logoPartido.SG {
+	background-image: url(../images/iconos_partidos/SG_.png);
+}
+.cPartido {
+	margin: 0;
+	padding: 10px 0 5px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #545454;
+	font-family: arial;
+	background-color: transparent;
+}
+.cPartido.MORENA {
+	border-top: 4px solid #610200;
+}
+.cPartido.PAN {
+	border-top: 4px solid #19589a;
+}
+.cPartido.PRI {
+	border-top: 4px solid #5DA456;
+}
+.cPartido.MC {
+	border-top: 4px solid #F38215;
+}
+.cPartido.PVEM {
+	border-top: 4px solid #78d154;
+}
+.cPartido.PT {
+	border-top: 4px solid #bb2a22;
+}
+.cPartido.PES {
+	border-top: 4px solid #752F8B;
+}
+.cPartido.PRD {
+	border-top: 4px solid #FFD807;
+}
+.cPartido.SG {
+	border-top: 4px solid #A9AAAD;
+}
+ 
+.menuConteo {
+	float: left;
+	width: 99.9%;
+}
+._disable-pointer-events {
+	pointer-events: none !important;
+}
+.menu-item {
+	position: relative;
+	margin: 1% auto;
+	width: 95%;
+	color: #fff;
+	transition: all 210ms cubic-bezier(0.8, 0.1, 0.2, 0.9);
+	border-radius: 15px;
+	box-shadow: 0 5px 10px -2px rgb(0 0 0 / 40%);
+}
+.menu-item.MORENA {
+	background:#610200;
+	margin-top:0;
+}
+.menu-item.PRD .title {
+	color: #000;
+}
+.menu-item:hover, .menu-item:focus {
+	z-index: 1;
+	transform: scale(1.07);
+	box-shadow: 0 0 1rem rgb(0 0 0, 0.5);
+	cursor: pointer;
+}
+.menu-item a.container {
+	margin: 0 auto;
+	width: 95%;
+	padding:0;
+	display: table;
+	color: #fff;
+}
+.menu-item a.container:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+.menu-item a.container:hover {
+	text-decoration: none;
+}
+.menu-item .icon {
+	width: 15%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.menu-item .icon .logoPartido {
+	position: relative;
+	margin: 7.5px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 55px;
+	height: 49px;
+	top: 0;
+}
+.menu-item .title {
+	font-size: calc(.4vw + .4vh + 0.3vmin);
+	width: 65%;
+	display: table-cell;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+}
+.menu-item .rating {
+	display: table-cell;
+	vertical-align: middle;
+	width: 22%;
+	border-radius: 10px;
+}
+.menu-item .rating .conteo {
+	font-size: 0.7rem;
+	background: rgb(0 0 0 / 40%);
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: inset -2px -2px 5px 0px rgb(0 0 0 / 30%);
+}
+
+@media only screen and (max-width: 600px) {
+	.menuConteo {
+		padding: 20px 0;
+	}
+	.menu-item a.container {
+		width: 100%;
+	}
+	.menu-item {
+		margin: 2% auto;
+	}
+	.menu-item .title {
+		font-size: calc(.7vw + .7vh + 0.6vmin);
+		width: 64%;
+	}
+	.menu-item .rating {
+		padding: 0 10px;
+	}
+	.menu-item .rating .conteo {
+		font-size: calc(.8vw + .8vh + 0.6vmin);
+		line-height: calc(.8vw + .8vh + 0.6vmin);
+	}
+	.menu-item .rating .conteo span {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1350px) {
+		.menuConteo.-scrolled .menu-item {
+		transform: perspective(40rem) translateY(-0.5rem) scaleX(0.95) rotateX(-40deg);
+	}
+	.donut-chart  {
+		width: 350px;
+		height: 350px;
+		transform: scale(0.9);
+	}
+	.namesPartidos.INTEGRACION + .donut-chart {
+		margin-bottom: 30%;
+	}
+	.recorte {
+		clip: rect(0px 350px 350px  175px);
+		clip-path: inset(0px 0px 0px 175px);
+	}
+	.quesito {
+		clip-path: inset(0px 175px 0px 0px);
+		clip: rect(0px 175px 350px 0px);
+	}
+	p.center { 
+		width: 225px;
+		height: 225px;
+	}
+	.namesPartidos.INTEGRACION + .donut-chart {
+		margin-bottom: 30%;
+	}
+	.namesPartidos span.MC, .namesPartidos span.PVEM, .namesPartidos span.PT, .namesPartidos span.PES, .namesPartidos span.PRD, .namesPartidos span.SG {
+		left: 0 !important;
+		top: 0 !important;
+		float: left;
+		position: relative;
+		width: calc(100% / 4);
+		margin-top: -50px;
+	}
+	.namesPartidos span.MORENA, .namesPartidos span.PAN, .namesPartidos span.PRI {
+		bottom: -100%;
+		right: 0;
+		left: 0;
+		transform: translate(0, 0);
+		width: calc(100% / 3);
+		position: relative;
+		float: right;
+		margin-bottom: -50px;
+	}
+	.namesPartidos.INTEGRACION span.MC,
+	.namesPartidos.INTEGRACION span.PVEM,
+	.namesPartidos.INTEGRACION span.PT,
+	.namesPartidos.INTEGRACION span.PES,
+	.namesPartidos.INTEGRACION span.PRD,
+	.namesPartidos.INTEGRACION span.SG {
+		left: 0 !important;
+		top: 0 !important;
+		float: left;
+		position: relative;
+		width: calc(100% / 6);
+		margin-top: -50px;
+	}
+
+	.namesPartidos.SenH span.MC,
+	.namesPartidos.SenH span.PVEM,
+	.namesPartidos.SenH span.PT,
+	.namesPartidos.SenH span.PES,
+	.namesPartidos.SenH span.PRD,
+	.namesPartidos.SenH span.SG {
+		left: 0 !important;
+		top: 0 !important;
+		float: left;
+		position: relative;
+		width: calc(100% / 5);
+		margin-top: -50px;
+	}
+}  

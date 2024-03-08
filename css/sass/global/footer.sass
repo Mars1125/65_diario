@@ -1,0 +1,108 @@
+.footer
+    background: #c2c2c2
+    .align-center
+        align-items: center
+    .title-links
+        text-align: center
+        @include movil
+            text-align: left
+    .spacing
+        padding-top: 24px
+        @include desktop
+            padding-top: 12px
+        @include x-largue
+            padding-top: 24px
+    .navigation-footer
+        list-style: none
+        padding-left: 0
+        text-align: center
+        text-decoration: underline
+        @include movil
+            text-align: left
+            text-decoration: none
+        a
+            color: #000
+            &:hover
+                color: #000
+                text-decoration: underline
+    .mapa
+        width: 100%
+        height: auto
+        min-height: 190px
+        display: block
+        margin-bottom: 12px
+        width: 100%
+        @include movil
+            min-height: 190px
+        @include medium
+            min-height: 100%
+        @include tablet
+            min-height: 100%
+        @include desktop
+            min-height: 310px
+            margin-bottom: 0px
+            width: 100%
+            margin: 0 0 0 auto
+        @include x-largue
+            min-height: 260px
+    .icon-360
+        text-align: center
+        margin: 16px 0
+        @include movil
+            margin: 16px 0
+        @include tablet
+            margin: 0
+        img
+            width: 100%
+            height: auto
+            max-width: 65px
+            margin: 0 auto
+            filter: drop-shadow(2px 4px 6px black)
+        .txt-btn
+            display: block
+    .title-footer
+        display: flex
+        align-items: center
+        flex-wrap: nowrap
+        .logo-footer
+            padding-right: 4px
+            max-width: 85px
+            margin: 16px auto
+            width: 100%
+            @include tablet
+                margin: 0
+    .address
+        margin-bottom: 0
+        text-align: center
+        @include desktop
+            text-align: left
+    .social-media-rss
+        display: flex
+        padding-top: 16px
+        @include tablet
+            display: none
+        .icon-rss
+            flex: 1
+            a
+                margin: 0 auto
+#backTop
+    display: none
+    padding: 10px
+    border-radius: 5px
+    border: 1px solid #FFF
+    background: #2E1B16
+    font-size: 1.5rem
+    color: #FFF
+    cursor: pointer
+    position: fixed
+    bottom: 5px
+    right: 5px
+    width: 40px
+    height: 40px
+    // top: auto
+    // left: auto
+    text-align: center
+    z-index: 6
+    img
+        width: 0
+        height: 0

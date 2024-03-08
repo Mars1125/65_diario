@@ -1,0 +1,113 @@
+.Access-button{
+	overflow:hidden;
+	position:fixed;
+	left: 0;
+	top: 2%;
+	transition:400ms;
+	width:45px; 
+	border-left:none;
+	/* background-color:#fff5f3; */
+	background: url(../images/barreLateral/menu1.png) no-repeat;
+	background-position: 100% 50%;
+	z-index:9999;
+	height:650px; border-radius:0 10px 10px 0
+}
+
+ 
+@media (max-width:767px){.Access-button{display:none !important}}
+@media (min-width:768px) and (max-width:991px){.Access-button{display:none !important}}
+.Access-button > .Access-info{list-style:none;position:absolute;display:none;left:35px;padding:0;top:14px;z-index:100000}
+.Access-button > .Access-box{ visibility:hidden;}
+.Access-button:hover > .Access-box{ visibility:visible; color:#333; padding:5px; border:0px #FF0000 solid; width:90%;}
+.Access-button > a >  .Access-out{position:absolute;right:0;height:100%;width:40px;top:0;text-align:center;padding:0}
+.Access-button > a >  .Access-out > img{height:100%}
+.Access-button:hover{transition:300ms;width:330px}
+
+.Access-button-2{
+	overflow:hidden;
+	position:fixed;
+	right:0;
+	top:8%;
+	transition:400ms;
+	width:45px; 
+	border-right: none;
+	background: url(../images/barreLateral/menu2.png) no-repeat;
+	background-position: 0% 50%;
+	z-index:9999;
+	height: 343px; 
+	border-radius: 10px 0 0 10px;
+}
+@media (max-width:767px){.Access-button-2{display:none !important}}
+@media (min-width:768px) and (max-width:991px){.Access-button-2{display:none !important}}
+.Access-button-2 > .Access-info{list-style:none;position:absolute;display:none;left:35px;padding:0;top:14px;z-index:100000}
+.Access-button-2 > .Access-box{ visibility:hidden;}
+.Access-button-2:hover > .Access-box{ visibility:visible; color:#333; padding:5px; border:0px #FF0000 solid; width:90%;}
+.Access-button-2 > a >  .Access-out{position:absolute;left:0;height:100%;width:40px;top:0;text-align:center;padding:0}
+.Access-button-2 > a >  .Access-out > img{height:100%}
+.Access-button-2:hover{transition:300ms;width:260px}
+
+.Access-button-3{overflow:hidden;position:fixed;right:0;top:350px;transition:400ms;width:50px;border:solid 2px #2E1B16;border-right: none;;background-color:#fff5f3;z-index:9999;height:520px; border-radius: 10px 0 0 10px;}
+@media (max-width:767px){.Access-button-3{display:none !important}}
+@media (min-width:768px) and (max-width:991px){.Access-button-3{display:none !important}}
+.Access-button-3 > .Access-info{list-style:none;position:absolute;display:none;left:35px;padding:0;top:14px;z-index:100000}
+.Access-button-3 > .Access-box{ visibility:hidden;}
+.Access-button-3:hover > .Access-box{ visibility:visible; color:#333; padding:5px; border:0px #FF0000 solid; width:90%;}
+.Access-button-3 > a >  .Access-out{position:absolute;left:0;height:100%;width:40px;top:0;text-align:center;padding:0}
+.Access-button-3 > a >  .Access-out > img{height:100%}
+.Access-button-3:hover{transition:300ms;width:350px}
+
+.cambia_color td{ 
+	/* background-color:#fff5f3; */
+	font-size:14px;
+	font-weight:normal;
+	margin:0px;
+	padding:0!important;
+	height: 35px;
+}
+.cambia_color td a { 
+	text-decoration:none;  
+	font-size:14px; 
+	font-weight:normal; 
+	color:#000; 
+	margin:0px; 
+	padding:0!important
+}
+.cambia_color td:hover{
+	/* border-left: 1px solid #FF0000; */
+}
+.cambia_color:hover td a{ 
+	/* background-color: #ffffff;  */
+	font-size:14px; 
+	font-weight:normal; 
+	color:rgb(80, 11, 11); 
+	margin:0px; 
+	padding:0!important;
+	
+}
+
+
+/* Tableta Horizontal */
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+	.Access-button{display:none !important}
+	.Access-button-2{display:none !important}
+	.Access-button-3{display:none !important}
+}
+/* Tableta Vertical */
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.Access-button{display:none !important}
+	.Access-button-2{display:none !important}
+	.Access-button-3{display:none !important}
+}
+
+/* Celular Horizontal */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.Access-button{display:none !important}
+	.Access-button-2{display:none !important}
+	.Access-button-3{display:none !important}
+}
+/* Celular Vertical */
+@media only screen and (max-width: 480px) {
+	.Access-button{display:none !important}
+	.Access-button-2{display:none !important}
+	.Access-button-3{display:none !important}
+}

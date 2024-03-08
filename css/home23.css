@@ -1,0 +1,1286 @@
+a {
+  color: #000;
+}
+
+.titleHome {
+  position: relative;
+  margin-bottom: 0;
+  line-height: 1em;
+}
+
+.carousel {
+  position: relative;
+  background: url("../../media/images/site/camara-senadores.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  z-index: 0;
+}
+.carousel:before {
+  content: "";
+  width: 100%;
+  display: flex;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.banner-home {
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 1px 5px #000;
+}
+
+.banner-home-index {
+  height: auto;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 90vh;
+}
+@media only screen and (min-width: 765px) {
+  .banner-home-index {
+    min-height: auto;
+    padding-bottom: 3em;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .banner-home-index {
+    min-height: auto;
+    padding-bottom: 3em;
+  }
+}
+.banner-home-index .carousel-index {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+@media only screen and (min-width: 765px) {
+  .banner-home-index .carousel-index {
+    height: auto;
+  }
+}
+.banner-home-index .carousel-index::after {
+  content: "";
+  clear: both;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner-home-index .carousel-index img {
+  width: 100%;
+  object-fit: cover;
+  height: 90vh;
+  position: relative;
+  background-position: bottom center;
+  transform: scale(1) rotate(0.1deg);
+  transition: transform 8s linear;
+}
+@media only screen and (min-width: 765px) {
+  .banner-home-index .carousel-index img {
+    height: 90vh;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .banner-home-index .carousel-index img {
+    height: inherit;
+  }
+}
+.banner-home-index .slide-init img {
+  transform: scale(1.15) rotate(0.1deg) !important;
+  transition: transform 0s linear;
+}
+.banner-home-index .slick-active img {
+  transform: scale(1.15) rotate(0.1deg);
+}
+.banner-home-index .slick-slide img {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.content-carousel {
+  color: #fff;
+  display: block;
+  position: relative;
+}
+.content-carousel .info {
+  margin-top: 95px;
+}
+@media only screen and (min-width: 765px) {
+  .content-carousel .info {
+    margin-top: 150px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .content-carousel .info {
+    margin-top: 220px;
+  }
+}
+.content-carousel .info .logo {
+  text-align: center;
+  text-shadow: 3px 1px 3px #000;
+}
+@media only screen and (min-width: 765px) {
+  .content-carousel .info .logo {
+    margin-bottom: 50px;
+  }
+}
+.content-carousel .info .logo img {
+  max-width: 160px;
+}
+@media only screen and (min-width: 481px) {
+  .content-carousel .info .logo img {
+    max-width: 175px;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .content-carousel .info .logo img {
+    max-width: 180px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .content-carousel .info .logo img {
+    max-width: 185px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .content-carousel .info .logo img {
+    max-width: 190px;
+  }
+}
+
+.carousel-home {
+  margin-top: 0px;
+  order: 1;
+}
+@media only screen and (min-width: 481px) {
+  .carousel-home {
+    margin-top: 0px;
+    order: unset;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .carousel-home {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .carousel-home {
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .carousel-home {
+    margin-top: 0px;
+  }
+}
+.carousel-home .carousel-home-slider {
+  position: relative;
+  overflow: hidden;
+  margin-top: 24px;
+  border-radius: 10px;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 765px) {
+  .carousel-home .carousel-home-slider {
+    margin-top: 0;
+  }
+}
+.carousel-home .carousel-home-slider .item-carousel {
+  position: relative;
+}
+.carousel-home .carousel-home-slider .item-carousel img {
+  object-fit: cover;
+  height: 300px;
+}
+@media only screen and (min-width: 460px) {
+  .carousel-home .carousel-home-slider .item-carousel img {
+    object-fit: cover;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .carousel-home .carousel-home-slider .item-carousel img {
+    object-fit: unset;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .carousel-home .carousel-home-slider .item-carousel img {
+    height: 430px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .carousel-home .carousel-home-slider .item-carousel img {
+    height: 340px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .carousel-home .carousel-home-slider .item-carousel img {
+    /* object-fit: cover; */
+    height: 324px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .carousel-home .carousel-home-slider .item-carousel img {
+    /* object-fit: cover; */
+    height: 400px;
+  }
+}
+
+
+.carousel-home .carousel-home-slider .item-carousel .slider-item-caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 0.75em 1em 0 1em;
+  font-size: 17px;
+  width: 100%;
+}
+.carousel-home .btn {
+  background: #1d0807;
+  color: #fff;
+  border-radius: 0;
+}
+.carousel-home .btn:hover, .carousel-home .btn:focus {
+  background: #fff;
+  color: #1d0807;
+}
+
+.menu-lateral {
+  position: fixed;
+  z-index: 2;
+  height: auto;
+  display: none;
+  top: 20%;
+  min-height: max-content;
+  transition-duration: 0.35s;
+  transition-delay: 0.1s;
+}
+@media only screen and (min-width: 1600px) {
+  .menu-lateral {
+    display: flex;
+  }
+}
+.menu-lateral .content {
+  height: inherit;
+  background: #fff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.menu-lateral .content .menu-lat {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-lateral .content .menu-lat .menu-lat-item {
+  margin: 0.25rem 0;
+  padding: 0 1em;
+}
+.menu-lateral .name {
+  height: inherit;
+  background: #1d0807;
+  color: #ffffff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.menu-lateral .name .m-title {
+  margin: 0;
+  position: relative;
+  white-space: nowrap;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  top: 50%;
+}
+
+.menu-lateral.left {
+  transition-property: left;
+  left: -405px;
+  width: 450px;
+}
+.menu-lateral.left:hover {
+  left: 0%;
+}
+.menu-lateral.left .content {
+  width: 90%;
+}
+.menu-lateral.left .name {
+  width: 10%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.menu-lateral.left .name .m-title {
+  -webkit-transform: rotate(180deg) translateY(50%);
+  transform: rotate(180deg) translateY(50%);
+  right: -5px;
+}
+
+.menu-lateral.right {
+  transition-property: right;
+  right: -305px;
+  width: 350px;
+}
+.menu-lateral.right:hover {
+  right: 0%;
+}
+.menu-lateral.right .content {
+  width: 87%;
+}
+.menu-lateral.right .name {
+  width: 13%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.menu-lateral.right .name .m-title {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.section-comunicaciones {
+  position: relative;
+}
+.section-comunicaciones .header-comunicaciones {
+  text-align: center;
+  padding: 45px 0;
+  position: relative;
+}
+.section-comunicaciones .body-comunicaciones {
+  position: relative;
+  background: url("../images/homepage/bg-comunicaciones2.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 60px 0;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+}
+.section-comunicaciones .body-comunicaciones::after {
+  content: "";
+  clear: both;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+.section-comunicaciones .body-comunicaciones .logo-citatorio {
+  max-width: 100px;
+}
+.section-comunicaciones .body-comunicaciones .citatorio {
+  max-width: 1300px;
+  width: 100%;
+  margin: 10px auto 50px auto;
+  text-shadow: 1px 1px 1px #000;
+}
+.section-comunicaciones .body-comunicaciones .citatorio .content, .section-comunicaciones .body-comunicaciones .citatorio p {
+  font-size: 17px;
+}
+.section-comunicaciones .body-comunicaciones .citatorio a {
+  color: #fff;
+}
+.section-comunicaciones .body-comunicaciones .citatorio strong, .section-comunicaciones .body-comunicaciones .citatorio b {
+  text-decoration: underline;
+}
+.section-comunicaciones .comision-comunicaciones {
+  width: 100%;
+  padding: 0px;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones {
+  height: auto;
+  overflow: hidden;
+  border-radius: 14px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 765px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones {
+    margin: 0px;
+  }
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones:hover .slick-dots {
+  display: block !important;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .slick-track {
+  display: flex !important;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .slick-slide {
+  height: inherit !important;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .slick-dots {
+  bottom: 10px;
+  display: none !important;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .slick-dots li button::before {
+  font-size: 20px;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion {
+  overflow: hidden;
+  background: #fff;
+  background-size: cover;
+  background-position: center;
+  padding: 15px 24px;
+  border-radius: 14px;
+  border: 2px solid;
+  position: relative;
+  display: flex;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (min-width: 1025px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion {
+    background: #fff url("../images/homepage/fondoComisionesCarousel.jpg") no-repeat center;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion {
+    padding: 35px 24px;
+  }
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .fotos {
+  align-items: center;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .fotos .foto {
+  text-align: center;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .foto-senador {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+@media only screen and (min-width: 765px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .foto-senador {
+    width: 82px;
+    height: 82px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .foto-senador {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .foto-senador {
+    width: 150px;
+    height: 150px;
+  }
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .center-vertical {
+  position: relative;
+}
+@media only screen and (min-width: 481px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .center-vertical {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .center-vertical {
+    position: absolute;
+  }
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .two-senador {
+  width: 48%;
+  height: auto;
+  border-radius: 10px;
+  display: inline-block;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .three-senador {
+  width: 42%;
+  height: auto;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 2%;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .default {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  max-width: 70px;
+  max-height: 80px;
+  margin-bottom: 4px;
+  border-radius: 10px;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .content .link-carousel {
+  color: #000;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .content .link-carousel p {
+  position: relative;
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .content .link-carousel p:nth-child(1) {
+  padding: 0px;
+  text-align: left !important;
+}
+@media only screen and (min-width: 765px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .content .link-carousel p:nth-child(1) {
+    padding: 0 16px;
+  }
+}
+.section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .content .link-carousel p:nth-child(2) {
+  padding-left: 0px;
+}
+@media only screen and (min-width: 765px) {
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .content .link-carousel p:nth-child(2) {
+    padding-left: 32px;
+  }
+}
+.section-comunicaciones .comision-permanente {
+  background: #fff;
+  border-radius: 14px;
+  padding: 0px;
+  color: #000;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  overflow: hidden;
+}
+
+.section-comunicaciones .comision-permanente .content-cp{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.section-comunicaciones .comision-permanente .content-cp .bg-sesion {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  top: 60px;
+  height: calc(100% - 30%);
+  /*transform: translateY(-50%); */
+}
+.section-comunicaciones .comision-permanente .title-comision-permanente {
+  margin-bottom: 5px;
+}
+.section-comunicaciones .comision-permanente .title-comision-permanente .image {
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+}
+.section-comunicaciones .comision-permanente .title-comision-permanente .firts {
+  padding: 4px;
+}
+.section-comunicaciones .comision-permanente .info-cp {
+  position: relative;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  height: 100%;
+  padding: 20px 16px;
+  width: 84%;
+  margin-left: auto;
+  margin-right: 1em;
+}
+.section-comunicaciones .comision-permanente h5{
+  font-weight: 700;
+  font-size: 1.35em;
+  margin-top: .75em;
+  text-align: center;
+}
+.section-comunicaciones .comision-permanente .info-cp .list-container-cp {
+  display: block;
+  text-align: center;
+}
+.section-comunicaciones .comision-permanente .info-cp .list-container-cp .list-cp {
+  display: inline-block;
+  margin: 4px 24px;
+  text-align: center;
+}
+.section-comunicaciones .comision-permanente .info-cp .list-container-cp .list-cp:hover a {
+  text-decoration: underline;
+  color: #010101;
+}
+
+.section-comunicaciones .comision-permanente .info-cp .link-btn{
+  display: block;
+  padding: 1em .5em;
+  margin-bottom: 16px;
+  background: #fff;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 700;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.section-comunicaciones .comision-permanente .info-cp .link-btn:hover{
+  
+}
+.preseas {
+  margin: 50px 0;
+}
+.preseas .presea {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 1024px){
+  .section-comunicaciones .comision-permanente .content-cp .bg-sesion{
+    display: none;
+  }
+
+  .section-comunicaciones .comision-permanente .info-cp h5 {
+    text-shadow: 2px -2px 7px #fff;
+}
+  .section-comunicaciones .comision-permanente {
+    background: #fff url(../images/fondo.jpg) no-repeat center;
+    background-size: cover; 
+    background-position: 0 60px;
+  }
+  .section-comunicaciones .comision-permanente .info-cp {
+    width: 100%;
+  }
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .two-senador {
+    max-width: 80px;
+  }
+  .section-comunicaciones .comision-permanente {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .section-comunicaciones .comision-comunicaciones .carousel-comunicaciones .item-comunicacion .two-senador {
+    max-width: 110px;
+  }
+  .section-comunicaciones .comision-permanente .info-cp .link-btn {
+    
+    padding: 0.65em;}
+
+    .section-comunicaciones .comision-permanente .info-cp h5 {
+      margin-bottom: 1.25em;
+  }
+  .section-comunicaciones .comision-permanente {
+    background-position: 0 55px;
+  }
+
+}
+
+
+@media only screen and (min-width: 765px) {
+  .preseas .presea {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .preseas .presea {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .preseas .presea {
+    flex: 1 0 0%;
+    width: auto;
+    padding-bottom: 0px;
+  }
+}
+.preseas .content-preseas {
+  padding-top: 30px;
+}
+.preseas .content-preseas .presea a {
+  display: flex;
+  align-items: center;
+}
+.preseas .content-preseas .presea a:hover {
+  color: #000;
+}
+@media only screen and (min-width: 1025px) {
+  .preseas .content-preseas .presea a {
+    display: block;
+  }
+}
+.preseas .content-preseas .presea a .title-presea {
+  padding: 8px;
+  font-size: 18px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 0;
+  flex: 0 0 auto;
+  width: 82%;
+  order: 2;
+  flex-grow: 1;
+}
+@media only screen and (min-width: 1025px) {
+  .preseas .content-preseas .presea a .title-presea {
+    padding: 16px;
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    flex: unset;
+    width: auto;
+    order: unset;
+    flex-grow: unset;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .preseas .content-preseas .presea a .title-presea {
+    padding: 0 24px;
+    background: transparent;
+    border-radius: 0px;
+    margin-bottom: 1.5rem;
+  }
+}
+.preseas .content-preseas .presea a .image {
+  width: 18%;
+  flex: 0 0 auto;
+  order: 1;
+}
+@media only screen and (min-width: 1025px) {
+  .preseas .content-preseas .presea a .image {
+    display: block;
+    flex: unset;
+    width: 100%;
+    order: unset;
+  }
+}
+.preseas .content-preseas .presea a .image img {
+  max-width: 180px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1025px) {
+  .preseas .content-preseas .presea a .image img {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .preseas .content-preseas .presea a .image img {
+    max-width: 190px;
+  }
+}
+.preseas .content-preseas .presea p.text-center {
+  position: relative;
+}
+.preseas .content-preseas .presea p.text-center a {
+  display: block;
+  width: 82%;
+  margin-left: auto;
+}
+@media only screen and (min-width: 481px) {
+  .preseas .content-preseas .presea p.text-center a {
+    width: 100%;
+  }
+}
+
+.convocatorias {
+  background: #775D56 url("../images/homepage/web-bg-convocatorias-comunicaciones.jpg") no-repeat center;
+  background-size: 137%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+  text-align: center;
+}
+@media only screen and (min-width: 481px) {
+  .convocatorias {
+    padding: 60px 0;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .convocatorias {
+    padding: 60px 0;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .convocatorias {
+    padding: 60px 0;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .convocatorias {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .convocatorias {
+    padding: 80px 0;
+  }
+}
+.convocatorias .cat-title {
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.35em;
+  font-size: 32px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding: 0 8px;
+  margin-bottom: 0;
+  text-align: center;
+}
+@media only screen and (min-width: 765px) {
+  .convocatorias .cat-title {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .convocatorias .cat-title {
+    font-size: 38px;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .convocatorias .cat-title {
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .convocatorias .cat-title {
+    font-size: 45px;
+  }
+}
+.convocatorias .btn {
+  background-color: #fff;
+  border-color: #fff;
+  color: #1d0807;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  box-shadow: 2px 3px 6px #000;
+  text-align: left;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 765px) {
+  .convocatorias .btn {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .convocatorias .btn {
+    font-size: 38px;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .convocatorias .btn {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .convocatorias .btn {
+    font-size: 22px;
+  }
+}
+
+.avisos-eventos {
+  padding: 50px 0;
+  background: #f7f7f7;
+}
+.avisos-eventos .micro-slider {
+  height: 480px;
+  position: relative;
+  width: 100%;
+}
+.avisos-eventos .micro-slider.fullwidth {
+  height: 480px;
+}
+.avisos-eventos .micro-slider.fullwidth .slider-item {
+  height: 480px;
+  line-height: 480px;
+  width: 100%;
+}
+.avisos-eventos .slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: 0 50%;
+}
+.avisos-eventos .slider-wrapper .slider-item {
+  background: #FFF;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  display: none;
+  font-size: 72px;
+  height: 335px;
+  line-height: 340px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 260px;
+  cursor: pointer;
+}
+.avisos-eventos .slider-wrapper .slider-item img {
+  width: 100%;
+  height: auto;
+}
+.avisos-eventos .indicators {
+  bottom: 0px;
+  left: 50%;
+  list-style-type: none;
+  margin: 0 0 0 -112px;
+  padding: 0;
+  position: absolute;
+}
+@media only screen and (min-width: 765px) {
+  .avisos-eventos .indicators {
+    margin: 0 0 0 -77px;
+  }
+}
+.avisos-eventos .indicators .indicator {
+  color: #fff;
+  float: left;
+  height: 16px;
+  margin-right: 8px;
+  text-align: center;
+  width: 16px;
+}
+.avisos-eventos .indicators .indicator:last-child {
+  margin: 0;
+}
+.avisos-eventos .indicators .indicator:hover a {
+  background: #ababab;
+}
+.avisos-eventos .indicators .indicator a {
+  background: #FFF;
+  border-radius: 8px;
+  border: 1px solid #ababab;
+  color: #FFF;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+.avisos-eventos .indicators .active a {
+  background: #ababab;
+}
+.avisos-eventos .icono-calendario {
+  text-align: center;
+  margin-top: 30px;
+}
+.avisos-eventos .icono-calendario a {
+  display: inline-block;
+  font-size: 1.25em;
+  border-bottom: 1px solid #b7b7b7;
+  padding-bottom: 4px;
+  border-top: 1px solid #b7b7b7;
+  padding-top: 4px;
+}
+.avisos-eventos .icono-calendario a:hover {
+  color: #000;
+}
+
+.igualdad-discriminacion {
+  margin: 50px 0;
+}
+.igualdad-discriminacion .puntos {
+  padding-top: 30px;
+}
+.igualdad-discriminacion .puntos .punto {
+  display: block;
+  line-height: 1.15em;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 481px) {
+  .igualdad-discriminacion .puntos .punto {
+    padding-bottom: 8px;
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .igualdad-discriminacion .puntos .punto {
+    padding-bottom: 8px;
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .igualdad-discriminacion .puntos .punto {
+    padding-bottom: 8px;
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .igualdad-discriminacion .puntos .punto {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .igualdad-discriminacion .puntos .punto {
+    font-size: 20px;
+    padding-bottom: 0px;
+  }
+}
+.igualdad-discriminacion .puntos .pt-l {
+  order: 2;
+}
+@media only screen and (min-width: 765px) {
+  .igualdad-discriminacion .puntos .pt-l {
+    order: 2;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .igualdad-discriminacion .puntos .pt-l {
+    order: unset;
+  }
+}
+.igualdad-discriminacion .puntos .pt-r {
+  order: 3;
+}
+@media only screen and (min-width: 765px) {
+  .igualdad-discriminacion .puntos .pt-r {
+    order: 3;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .igualdad-discriminacion .puntos .pt-r {
+    order: unset;
+  }
+}
+.igualdad-discriminacion .puntos .pt-c {
+  order: 1;
+  text-align: center;
+}
+@media only screen and (min-width: 765px) {
+  .igualdad-discriminacion .puntos .pt-c {
+    order: 1;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .igualdad-discriminacion .puntos .pt-c {
+    order: unset;
+  }
+}
+.igualdad-discriminacion .puntos .pt-c img {
+  max-width: 100px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 481px) {
+  .igualdad-discriminacion .puntos .pt-c img {
+    max-width: 180px;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .igualdad-discriminacion .puntos .pt-c img {
+    max-width: 236px;
+    margin-bottom: 0px;
+  }
+}
+.igualdad-discriminacion .puntos .p1 {
+  text-align: left;
+  padding-top: 0px;
+}
+@media only screen and (min-width: 1201px) {
+  .igualdad-discriminacion .puntos .p1 {
+    padding-top: 18px;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .igualdad-discriminacion .puntos .p1 {
+    padding-top: 32px;
+  }
+}
+.igualdad-discriminacion .puntos .p2 {
+  text-align: left;
+  padding-top: 0px;
+}
+@media only screen and (min-width: 1201px) {
+  .igualdad-discriminacion .puntos .p2 {
+    padding-top: 10px;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .igualdad-discriminacion .puntos .p2 {
+    padding-top: 12px;
+  }
+}
+.igualdad-discriminacion .puntos .p3 {
+  text-align: left;
+  padding-top: 0px;
+}
+@media only screen and (min-width: 1201px) {
+  .igualdad-discriminacion .puntos .p3 {
+    padding-top: 10px;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .igualdad-discriminacion .puntos .p3 {
+    padding-top: 18px;
+  }
+}
+.igualdad-discriminacion .puntos .p4 {
+  padding-top: 0px;
+}
+@media only screen and (min-width: 1201px) {
+  .igualdad-discriminacion .puntos .p4 {
+    padding-top: 30px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .igualdad-discriminacion .puntos .p4 {
+    padding-top: 42px;
+  }
+}
+.igualdad-discriminacion .puntos .p5 {
+  padding-top: 0px;
+}
+@media only screen and (min-width: 1201px) {
+  .igualdad-discriminacion .puntos .p5 {
+    padding-top: 50px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .igualdad-discriminacion .puntos .p5 {
+    padding-top: 85px;
+  }
+}
+
+.politicas-transparencia {
+  padding: 50px 0;
+  background: #f5f5f5;
+}
+.politicas-transparencia .titleHome {
+  margin-bottom: 2.75rem;
+}
+.politicas-transparencia img {
+  transition: 0.7s ease;
+  border-radius: 24px;
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 481px) {
+  .politicas-transparencia img {
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .politicas-transparencia img {
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .politicas-transparencia img {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .politicas-transparencia img {
+    margin-bottom: 0;
+  }
+}
+.politicas-transparencia img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
+.politicas-transparencia .content-menu {
+  padding: 16px;
+  background: rgb(243, 243, 243);
+  background: -webkit-linear-gradient(180deg, rgb(243, 243, 243), rgb(255, 255, 255) 100%);
+  background: -o-linear-gradient(180deg, rgb(243, 243, 243), rgb(255, 255, 255) 100%);
+  background: -moz-linear-gradient(180deg, rgb(243, 243, 243), rgb(255, 255, 255) 100%);
+  background: linear-gradient(180deg, rgb(243, 243, 243), rgb(255, 255, 255) 100%);
+  box-shadow: 3px 3px 5px 0px rgb(128, 128, 128);
+  border-radius: 14px;
+}
+.politicas-transparencia .content-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+.politicas-transparencia .content-menu ul li {
+  padding: 6px 0;
+}
+.politicas-transparencia .content-menu ul li a {
+  font-size: 18px;
+  font-weight: 500;
+}
+.politicas-transparencia .content-menu ul li a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+.politicas-transparencia .logos-transp a {
+  display: block;
+}
+
+.transparencia {
+  background: #2a2a2a;
+}
+.transparencia .transp-rows {
+  padding-top: 0px;
+}
+.transparencia .transp-rows .opc {
+  position: relative;
+}
+.transparencia .transp-rows .opc:hover {
+  background: #3a3a3a;
+}
+.transparencia .transp-rows .opc .transp-item a {
+  display: block;
+  position: relative;
+  height: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 16px 0px;
+  color: #fff;
+}
+@media only screen and (min-width: 1201px) {
+  .transparencia .transp-rows .opc .transp-item a {
+    padding: 16px;
+  }
+}
+.transparencia .transp-rows .opc .transp-item a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=home23.css.map */
+
+
+@media only screen and (max-width: 640px){
+  .section-comunicaciones .comision-permanente .info-cp .link-btn {
+      padding: 0.65em;
+      font-size: 18px;
+  }
+  .section-comunicaciones .comision-permanente h5 {
+      font-weight: 700;
+      font-size: 1.35em;
+      margin-top: 0.75em;
+      text-align: center;
+      background: #fff;
+      margin: 0;
+      padding: 10px 10px;
+  }
+  .content-carousel .info .logo img {
+      max-width: 135px;
+  }
+  }
+
+  .avisos-eventos .indicators {
+    margin: 0 !important;
+    transform: translateX(-50%);
+    width: max-content;
+}

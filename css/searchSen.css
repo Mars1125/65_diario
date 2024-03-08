@@ -1,0 +1,310 @@
+.longShadow {
+	box-shadow: 1px 1px rgb(0 0 0 / 1%), 2px 2px rgb(0 0 0 / 3%), 3px 3px rgb(0 0 0 / 3%), 4px 4px rgb(0 0 0 / 2%), 5px 5px rgb(0 0 0 / 2%), 6px 6px rgb(0 0 0 / 1%), 7px 7px rgb(0 0 0 / 1%), 8px 8px rgb(0 0 0 / 1%), 9px 9px rgb(0 0 0 / 1%), 10px 10px rgb(0 0 0 / 1%), 11px 11px rgb(0 0 0 / 1%), 12px 12px rgb(0 0 0 / 1%), 13px 13px rgb(0 0 0 / 1%), 14px 14px rgb(0 0 0 / 1%), 15px 15px rgb(0 0 0 / 1%), 16px 16px rgb(0 0 0 / 1%), 17px 17px rgb(0 0 0 / 1%), 18px 18px rgb(0 0 0 / 1%), 19px 19px rgb(0 0 0 / 1%), 20px 20px rgb(0 0 0 / 1%), 21px 21px rgb(0 0 0 / 0%), 22px 22px rgb(0 0 0 / 0%), 23px 23px rgb(0 0 0 / 0%), 24px 24px rgb(0 0 0 / 0%), 25px 25px rgb(0 0 0 / 0%), 26px 26px rgb(0 0 0 / 0%), 27px 27px rgb(0 0 0 / 0%), 28px 28px rgb(0 0 0 / 0%), 29px 29px rgb(0 0 0 / 0%), 30px 30px rgb(0 0 0 / 0%);
+}
+.cntBusqueda {
+	width: 100%;
+	position: relative;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.senCnt {
+	position: relative;
+	width: calc(100% / 4);
+	padding: 1%;
+	display: flex;
+}
+.senCard {
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0.06);
+	border-radius: 30px;
+	box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 20%);
+	background: rgba(255,255,255,0.5);
+}
+.senCard hr {
+	margin-top: 10px;
+}
+.nombreSen {
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 0;
+	margin: 15px auto 0;
+}
+.txtSen {
+	position: relative;
+	padding: 1vw 0 0;
+	font-family: "Krub", sans-serif;
+	font-size: calc(.55vw + .55vh + 0.4vmin);
+	text-shadow: 0 0 0 #000000;
+	text-align: center;
+	font-weight: bold;
+}
+.headerCard {
+	width: 100%;
+}
+.logos {
+	float: left;
+	width: 100%;
+	padding: .1vw 0 .5vw 0.5vw;
+}
+.imgPartido {
+	position: relative;
+	width: 20%;
+	max-width: 55px;
+	overflow: hidden;
+	border-radius: 50%;
+	float: left;
+}
+.imgPartido img {
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+.imgPartido:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+.edoSen {
+	float: right;
+	text-align: center;
+}
+.edoSen img {
+	max-height: 40px;
+}
+.edoSen span {
+	font-size: calc(.37vw + .37vh + 0.3vmin);
+	font-family: arial;
+	font-weight: bold;
+}
+.fotoSen {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: .7vw;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.fotoSen img {
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+.fotoSen:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+.dataSen {
+	float: left;
+	width: 100%;
+	padding: 0 15px 15px;
+	margin: 0 0 50px;
+	word-break: break-word;
+}
+.senDir, .senTel, .senMail {
+	width: 100%;
+}
+.dataSen th {
+	text-align: center;
+	display: contents;
+	font-size: calc(.4vw + .4vh + 0.3vmin);
+}
+.dataSen td {
+	padding: .2vw .1vw .2vw .7vw;
+	vertical-align: middle;
+	text-align: justify;
+	font-size: calc(.4vw + .4vh + 0.3vmin);
+}
+.senDir i, .senDir span, .senTel i, .senTel span, .senMail i, .senMail span {
+	display: table-cell;
+	vertical-align: middle;
+}
+.footerCard {
+	position: absolute;
+	width: calc(100% - 20px);
+	margin: 0 0 5px;
+	text-align: center;
+	bottom: 0;
+}
+a.botonSocial {
+	display: inline-block;
+	width: 15%;
+	margin: 0 auto;
+	overflow: hidden;
+	bottom: 0;
+	padding: 0 5px;
+}
+.botonSocial img {
+	width: 100%;
+	height: auto;
+}
+
+/*@media only screen and (max-width: 600px) and (min-width: 850px) {
+.senCnt {
+    width: calc(100% / 3);
+}
+}*/
+@media only screen and (max-width: 1150px) {
+	.senCnt {
+		width: calc(100% / 2);
+		padding: 2%;
+	}
+	.imgPartido {
+		max-width: 80px;
+	}
+	.edoSen img {
+		max-height: 45px;
+	}
+	.edoSen span {
+		font-size: calc(.65vw + .65vh + 0.3vmin);
+	}
+	.fotoSen {
+		width: 60%;
+	}
+	.txtSen {
+		font-size: calc(.90vw + .90vh + 0.4vmin);
+	}
+	.dataSen th {
+		font-size: calc(.65vw + .65vh + 0.3vmin);
+	}
+	.dataSen td {
+		padding: .8vw .2vw 1.1vw 1.5vw;
+		font-size: calc(.65vw + .65vh + 0.3vmin);
+	}
+	a.botonSocial {
+		width: 12%;
+		padding: 0 4px;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.senCnt {
+		width: calc(100% / 2);
+	}
+	.imgPartido {
+		max-width: 80px;
+	}
+	.edoSen img {
+		max-height: 45px;
+	}
+	.edoSen span {
+		font-size: calc(.8vw + .8vh + 0.4vmin);
+	}
+	.fotoSen {
+		width: 60%;
+	}
+	.txtSen {
+		font-size: calc(1.15vw + 1.15vh + 0.6vmin);
+	}
+	.dataSen th {
+		font-size: calc(.8vw + .8vh + 0.4vmin);
+	}
+	.dataSen td {
+		padding: 1vw .2vw 2vw 1.5vw;
+		font-size: calc(.8vw + .8vh + 0.4vmin);
+	}
+	a.botonSocial {
+		width: 13%;
+		padding: 0 5px;
+	}
+}
+@media only screen and (max-width: 850px) {
+	.senCnt {
+		width: calc(100% / 2);
+	}
+	.imgPartido {
+		max-width: 80px;
+	}
+	.edoSen img {
+		max-height: 45px;
+	}
+	.edoSen span {
+		font-size: calc(.8vw + .8vh + 0.4vmin);
+	}
+	.fotoSen {
+		width: 60%;
+	}
+	.txtSen {
+		font-size: calc(1.15vw + 1.15vh + 0.6vmin);
+	}
+	.dataSen th {
+		font-size: calc(.8vw + .8vh + 0.4vmin);
+	}
+	.dataSen td {
+		padding: 1vw .2vw 2vw 1.5vw;
+		font-size: calc(.8vw + .8vh + 0.4vmin);
+	}
+	a.botonSocial {
+		width: 13%;
+		padding: 0 5px;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.senCnt {
+		width: calc(100% / 2);
+	}
+	.imgPartido {
+		max-width: 80px;
+	}
+	.edoSen img {
+		max-height: 50px;
+	}
+	.edoSen span {
+		font-size: calc(.8vw + .8vh + 0.4vmin);
+	}
+	.fotoSen {
+		width: 60%;
+	}
+	.txtSen {
+		font-size: calc(1.5vw + 1.5vh + 0.7vmin);
+	}
+	.dataSen th {
+		font-size: calc(.9vw + .9vh + 0.4vmin);
+	}
+	.dataSen td {
+		padding: 1vw .2vw 2vw 1.5vw;
+		font-size: calc(.9vw + .9vh + 0.4vmin);
+	}
+	a.botonSocial {
+		width: 13%;
+		padding: 0 5px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.senCnt {
+		width: 100%;
+		padding: 3% 2%;
+	}
+	.imgPartido {
+		max-width: 80px;
+	}
+	.edoSen img {
+		max-height: 50px;
+	}
+	.edoSen span {
+		font-size: calc(.8vw + .8vh + 0.4vmin);
+	}
+	.fotoSen {
+		width: 60%;
+	}
+	.txtSen {
+		font-size: calc(1.5vw + 1.5vh + 0.7vmin);
+	}
+	.dataSen th {
+		font-size: calc(.9vw + .9vh + 0.4vmin);
+	}
+	.dataSen td {
+		padding: 1vw .2vw 2vw 1.5vw;
+		font-size: calc(.9vw + .9vh + 0.4vmin);
+	}
+	a.botonSocial {
+		width: 13%;
+		padding: 0 5px;
+	}
+}

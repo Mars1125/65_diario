@@ -1,0 +1,574 @@
+/* MAPA */
+
+ 
+.pin{
+    position: absolute;
+ 
+}
+.circulo {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 22px;
+    height: 22px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; 
+}
+
+.txt_curul{
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    margin: 22px 0 0 0;
+    display: block;
+    color: #5a5a5a;
+}
+.c_nulo{ background: #f2f2f2; background: linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(0,0,0,1) 100%); }
+.c_morena{ background: #610D00; background: linear-gradient(0deg, rgba(97,13,0,1) 55%, rgba(232,53,26,1) 100%, rgba(255,255,255,1) 100%); }
+.hr-morena {border-top: 2px solid #610D00; opacity: 1; background-color:#610D00}
+ 
+.c_pan{ background: #00579F; background: linear-gradient(0deg, rgba(0,87,159,1) 55%, rgba(42,154,246,1) 100%, rgba(255,255,255,1) 100%); }
+.hr-pan {border-top: 2px solid #00579F; opacity: 1;}
+
+.c_pri{ background: #4e9148; background: linear-gradient(0deg, rgba(78,145,72,1) 55%, rgba(151,233,143,1) 100%, rgba(255,255,255,1) 100%); }
+.hr-pri {border-top: 2px solid #4e9148; opacity: 1;}
+
+.c_movimiento_ciudadano{ background: #FF8300; background: linear-gradient(0deg, rgba(255,131,0,1) 55%, rgba(255,198,137,1) 100%, rgba(255,255,255,1) 100%); }
+.hr-movimiento_ciudadano {border-top: 2px solid #FF8300; opacity: 1;}
+/* 54B948 */
+.c_pvem{ background: #79cc6f; background: linear-gradient(0deg, rgba(121,204,111,1) 55%, rgba(231,255,228,1) 100%, rgba(255,255,255,1) 100%); }
+.hr-pvem {border-top: 2px solid #79cc6f; opacity: 1;}
+
+.c_pt{ background: #BB2A22; background: linear-gradient(0deg, rgba(187,42,34,1) 55%, rgba(255,186,183,1) 100%, rgba(255,255,255,1) 100%);}
+.hr-pt {border-top: 2px solid #BB2A22; opacity: 1;}
+
+.c_pes{ background: #A35C9C; background: linear-gradient(0deg, rgba(163,92,156,1) 55%, rgba(247,189,242,1) 100%, rgba(255,255,255,1) 100%); }
+.hr-pes {border-top: 2px solid #A35C9C; opacity: 1;}
+
+.c_prd{ background: #FFD806; background: linear-gradient(0deg, rgba(255,216,6,1) 55%, rgba(255,250,223,1) 100%, rgba(255,255,255,1) 100%);}
+.hr-prd {border-top: 2px solid #FFD806; opacity: 1;}
+
+.c_sg{ background: #A9AAAD; background: linear-gradient(0deg, rgba(169,170,173,1) 55%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);}
+.hr-sg {border-top: 2px solid #A9AAAD; opacity: 1;}
+
+.c_guia{ background: rgb(233, 85, 208); }
+.redes{ font-size: 22px; }
+.hand{ cursor: pointer; }
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__bounce {
+--animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+--animate-duration: 300ms;
+--animate-delay: 0.3s;
+}
+
+
+
+
+/* Orden alfabetico */
+.profileImg {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profileImg:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.profileImg img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+}
+
+.card_senado_MORENA{
+    background: url(../images/senadores/card_senado_MORENA.png);
+    background-color: white;
+    border-radius: 21px;
+    height: 445px; 
+    width: 319px;
+    box-shadow: 4px 3px 9px 3px rgb(0 0 0 / 30%);
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 0px;    
+    margin-left: 15px;
+    margin-right: 15px
+}
+.card_senado_PAN{
+    background: url(../images/senadores/card_senado_PAN.png);
+    background-color: white;
+    border-radius: 21px;
+    height: 445px; 
+    width: 319px;
+    box-shadow: 4px 3px 9px 3px rgb(0 0 0 / 30%);    
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 0px;
+    margin-left: 15px;
+    margin-right: 15px
+}
+.card_senado_PRI{
+    background: url(../images/senadores/card_senado_PRI.png);
+    background-color: white;
+    border-radius: 21px;
+    height: 445px; 
+    width: 319px;
+    box-shadow: 4px 3px 9px 3px rgb(0 0 0 / 30%);    
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 0px;
+    margin-left: 15px;
+    margin-right: 15px
+}
+.card_senado_MC{
+    background: url(../images/senadores/card_senado_MC.png);
+    background-color: white;
+    border-radius: 21px;
+    height: 445px; 
+    width: 319px;
+    box-shadow: 4px 3px 9px 3px rgb(0 0 0 / 30%);    
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 0px;
+    margin-left: 15px;
+    margin-right: 15px
+}
+.card_senado_PVEM{
+    background: url(../images/senadores/card_senado_PVEM.png);
+    background-color: white;
+    border-radius: 21px;
+    height: 445px; 
+    width: 319px;
+    box-shadow: 4px 3px 9px 3px rgb(0 0 0 / 30%);    
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 0px;
+    margin-left: 15px;
+    margin-right: 15px
+}
+.card_senado_PT{
+    background: url(../images/senadores/card_senado_PT.png);
+    background-color: white;
+    border-radius: 21px;
+    height: 445px; 
+    width: 319px;
+    box-shadow: 4px 3px 9px 3px rgb(0 0 0 / 30%);    
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 0px;
+    margin-left: 15px;
+    margin-right: 15px
+}
+.card_senado_SG{
+    background: url(../images/senadores/card_senado_SG.png);
+    background-color: white;
+    border-radius: 21px;
+    height: 445px; 
+    width: 319px;
+    box-shadow: 4px 3px 9px 3px rgb(0 0 0 / 30%);    
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 0px;
+    margin-left: 15px;
+    margin-right: 15px
+}
+.card_senado_PES{
+    background: url(../images/senadores/card_senado_PES.png);
+    background-color: white;
+    border-radius: 21px;
+    height: 445px; 
+    width: 319px;
+    box-shadow: 4px 3px 9px 3px rgb(0 0 0 / 30%);    
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 0px;
+    margin-left: 15px;
+    margin-right: 15px
+}
+.card_senado_PRD{
+    background: url(../images/senadores/card_senado_PRD.png);
+    background-color: white;
+    border-radius: 21px;
+    height: 445px; 
+    width: 319px;
+    box-shadow: 4px 3px 9px 3px rgb(0 0 0 / 30%);    
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    position: relative;
+    border: 0px;
+    margin-left: 15px;
+    margin-right: 15px
+}
+.card_head{
+    width:40%; 
+    position: relative;
+}
+.card_top_foto{
+    position: absolute; 
+    margin: 10px 0 0 5px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    max-width: 100px; 
+    max-height: 100px;
+}
+.card_top_escudo{
+    position: absolute; 
+    margin: 45px 0 0 131px;  
+    border-radius: 5%; 
+    max-width: 70px; 
+    max-height: 70px;
+}
+.card_top_edo{
+    position: absolute; 
+    margin: 111px 0 0 85px;  
+    width: 140px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5%;
+}
+.card_top_logo{
+    position: absolute; 
+    margin: 60px 0 0 235px; 
+    overflow: hidden; 
+    border-radius: 5%; 
+    max-width: 70px; 
+    max-height: 70px;
+}
+.cardNombre{
+    position: relative;
+    width: 65%;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    margin: 1px 0 0 100px;
+}
+.infoEstado{
+    font-size: 18px;
+}
+ txtIntBuscar, .txtIntDownload{
+    font-size: 18px;
+}
+.icoDir{
+    font-size: 55px!important;
+    margin-top: 2px;
+}
+.portada2{
+    padding-top: 0px!important;
+}
+.contBusOrdeAlfa{
+    width: 25%!important;
+}
+#contCards{
+    margin: 20px auto !important;
+}
+
+#planoSenadores{
+    width: 100%;
+    height: 500px;
+}
+
+@media (max-width: 1380px) {
+    .titleXGenero{
+        font-size: 20px;
+    }
+    .icoDir{
+        font-size: 40px!important;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1370px) {
+    .notaSenadores{
+        position: relative!important;
+        width: 95%!important;
+    }
+    .card_senado_SG {
+        height: 440px;
+        width: 314px;
+       
+    }
+}
+@media (max-width: 1025px) {
+    .cardNombre, .cardInfo, .card-body{
+        font-size: 12px;
+    }
+    .cont_1, .cont_2, .cont_3{
+        font-size: 20px!important;
+    }
+    .nombreSend{
+        font-size: 14px;
+    }
+    .contBusOrdeAlfa{
+        width: 50%!important;
+    }
+}
+@media (max-width: 760px) {
+    .contSelectEdos{
+        position: absolute; 
+        margin-left: 30%!important; 
+        margin-top: -10px!important; 
+        font-size: 14px!important;
+        z-index: 2;
+    }
+    .selectEdos{
+        width: 110px!important;
+    }
+    .icoDir{
+        margin-top: 0px;
+    }
+    .table{
+        font-size: 16px;
+    }
+}
+@media (max-width: 606px) {
+    #contCards_{
+        margin: 0 ;
+    }
+    #planoSenadores{
+        width: 100%;
+        height: 300px;
+    }
+    .card_senado_SG {
+        height: 445px;
+        width: 319px;
+       
+    }
+    .cardNombre, .cardInfo, .card-body, .cardNombre, .cardInfo, .card-body span{
+        font-size: 16px;
+    }
+    .cont_1, .cont_2, .cont_3{
+        font-size: 16px!important;
+    }
+    .infoEstado, .txtIntBuscar, .txtIntDownload{
+        font-size: 14px;
+    }
+    .nombreSend{
+        font-size: 16px;
+    }
+    .escudo{
+        margin-top: -120px;
+        margin-left: 1px;
+    }
+    .imgSenRegion{
+        width: 60px!important;
+    }
+    .imgGpoRegion{
+        width: 40px!important;
+    }
+    .escudo_img{
+        display: none;
+    }
+    .contSelectEdos{
+        position: absolute; 
+        margin-left: 52%!important; 
+        margin-top: -10px!important; 
+        font-size: 11px!important;
+        z-index: 9999;
+    }
+    .selectEdos{
+        width: 110px!important;
+    }
+    #padre { 
+		background: rgba(0,0,0, .3);
+		width: 98%!important;
+		height: auto;
+		padding: 5px;
+		margin: 0 auto;
+	}
+    #cont_mapa { 
+		height: 300px!important; 
+        width: 600px; 
+        margin: 0 auto;
+	}
+
+    .card_senado_SG{
+        margin: 0 auto 1.5em auto !important;
+    }
+}
+
+
+
+#cont_mapa { 
+    height: 400px; 
+    width: 600px; 
+    margin: 0 auto;
+}
+.highcharts-container{
+    width: 100% !important;
+  }
+  
+  .highcharts-root{
+    width: 100% !important;
+  }
+
+
+.btn-mujer{
+	background-color: #ccd1d0;
+}
+.btn-mujer:hover{
+	background-color: #a8a8a8;
+}
+
+.btn-hombre{
+	background-color: #ccd1d0;
+}
+.btn-hombre:hover{
+	background-color: #a8a8a8;
+}
+
+
+
+
+#contPrincipio1, #contPrincipio2, #contPrincipio3{
+    display: none;
+}
+.cont_1:hover, .cont_2:hover, .cont_3:hover{
+    color: #3c7437;
+}
+
+
+
+
+
+
+
+
+.pagination {
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+
+.pagination > li > a
+{
+    background-color: #775D56;
+    color: rgb(253, 252, 253);
+    width: 35px;
+    text-align: center;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: black;
+    background-color: #eee;
+    border-color: #ddd;
+    text-decoration: none;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: purple;
+    border: solid 1px purple;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: purple;
+    border: solid 1px purple;
+}
+
+
+
+.activitySection ul.activityTabs li label{
+    color: #000000;
+}
+.indicator-SG, .indicator-SG>li>a>.informesCard{
+    background: rgb(122 29 29);
+}
+.activitySection input[name="tab-control"]:nth-of-type(1):checked ~ ul.label-SG > li:nth-child(1) > label, .activitySection input[name="tab-control"]:nth-of-type(2):checked ~ ul.label-SG > li:nth-child(2) > label, .activitySection input[name="tab-control"]:nth-of-type(3):checked ~ ul.label-SG > li:nth-child(3) > label, .activitySection input[name="tab-control"]:nth-of-type(4):checked ~ ul.label-SG > li:nth-child(4) > label, .activitySection input[name="tab-control"]:nth-of-type(5):checked ~ ul.label-SG > li:nth-child(5) > label, .activitySection input[name="tab-control"]:nth-of-type(6):checked ~ ul.label-SG > li:nth-child(6) > label, .activitySection input[name="tab-control"]:nth-of-type(7):checked ~ ul.label-SG > li:nth-child(7) > label{
+    color:  rgb(122 29 29);
+}
+
+
+.radiusMap{ 
+    width: 25px;
+    margin-top: 6px;
+    transform: scale(1.3);
+}
+.nomEdoMap{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #5b0f00;
+}
+.contSelectEdos{
+    position: absolute; 
+    margin-left: 22%; 
+    z-index: 1;
+    font-size: 12px;
+}
+.selectEdos{
+    width: 127px;
+    background-color: #580404;
+    color: whitesmoke;
+    border-radius: 0.25rem;
+}
+.intPartidos{
+    padding: 35px 0 12px 0!important;
+}
+.intPartidos .box-senadores{
+    position: relative;
+    display: inline-block;
+    background: transparent;
+}
+.intPartidos .box-senadores .img-responsive{
+    width: 100%;
+    height: auto;
+    max-width: 330px;
+}
+
+.intPartidos .box-senadores .totales{
+    position: absolute;
+    right: 9%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    width: 28px;
+
+}
+
+.intPartidos .MORENA .totales{background: #B5261E;}
+.intPartidos .PAN .totales{background:#05338D;}
+.intPartidos .MC .totales{background:#F5821E;}
+.intPartidos .PRI .totales{background: #D33026;}
+.intPartidos .PVEM .totales{background:#58B950;}
+.intPartidos .PT .totales{background: #DA2B1C;}
+.intPartidos .SG .totales{background: #666F88;}
+.intPartidos .PES .totales{background: #66257F;}
+.intPartidos .PRD .totales{background: #FFD900;}

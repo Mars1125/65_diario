@@ -1,0 +1,788 @@
+a
+    color: #000
+.titleHome
+    position: relative
+    margin-bottom: 0
+    line-height: 1em
+.carousel
+    position: relative
+    background: url('../../media/images/site/camara-senadores.jpg') no-repeat center
+    background-size: cover
+    height: 100%
+    z-index: 0
+    &:before
+        content: ''
+        width: 100%
+        display: flex
+        height: 100% 
+        background: rgba(0,0,0,.5)
+        position: absolute
+        top: 0
+        z-index: -1
+
+
+.banner-home
+    margin-top: 30px
+    text-align: center
+    color: #fff
+    text-shadow: 2px 1px 5px #000
+// Estilos para el banner del fondo en home
+.banner-home-index
+    height: auto
+    display: block
+    width: 100%
+    overflow: hidden
+    position: relative
+    min-height: 90vh
+    @include medium
+        min-height: 88vh
+    @include x-largue
+        min-height: 80vh
+    .carousel-index
+        position: absolute
+        width: 100%
+        height: auto
+        top: 0
+        @include medium
+            height: auto
+        &::after
+            content: ""
+            clear: both
+            width: 100%
+            height: 100%
+            background: rgba(0,0,0,.45)
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+        img
+            width: 100%
+            object-fit: cover
+            height: 90vh
+            position: relative
+            background-position: bottom center
+            transform: scale(1) rotate(0.1deg)
+            transition: transform 8s linear
+            @include medium
+                height: 90vh
+            @include tablet
+                height: inherit
+    .slide-init 
+        img
+            transform: scale(1.15) rotate(0.1deg) !important
+            transition: transform 0s linear
+    .slick-active 
+        img
+            transform: scale(1.15) rotate(0.1deg)
+    .slick-slide img 
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: cover
+.content-carousel
+    color: #fff
+    display: block
+    position: relative
+    .info
+        margin-top: 95px
+        @include medium
+            margin-top: 150px
+        @include tablet
+            margin-top: 220px
+        .logo
+            text-align: center
+            text-shadow: 3px 1px 3px #000
+            @include medium
+                margin-bottom: 50px
+            img
+                max-width: 160px
+                @include movil
+                    max-width: 175px
+                @include medium
+                    max-width: 180px
+                @include tablet
+                    max-width: 185px
+                @include desktop
+                    max-width: 190px
+
+.carousel-home
+    margin-top: 0px
+    order: 1
+    @include movil
+        margin-top: 0px
+        order: unset
+    @include medium
+        margin-top: 0px
+    @include tablet
+        margin-top: 0px
+    @include desktop
+        margin-top: 00px
+    .carousel-home-slider
+        position: relative
+        overflow: hidden
+        margin-top: 24px
+        border-radius: 10px
+        box-shadow: 0px -4px 10px rgba(0,0,0,.5)
+        @include medium
+            margin-top: 0
+        .item-carousel
+            position: relative
+            img
+                object-fit: cover
+                height: 300px
+                @include tablet
+                    height: 430px
+                @include desktop
+                    height: 340px
+                @include x-largue
+                    object-fit: cover
+                    height: 430px
+            .slider-item-caption
+                position: absolute
+                bottom: 0
+                background: rgba(0,0 ,0 ,0.65)
+                color: #fff
+                padding: .75em 1em 0 1em
+                font-size: 17px
+                width: 100%
+    .btn
+        background: $primary
+        color: #fff
+        border-radius: 0
+        &:hover, &:focus
+            background: #fff
+            color: $primary
+
+
+
+    
+
+//Para los menus laterales
+.menu-lateral
+    position: fixed
+    z-index: 2
+    height: auto
+    display: none
+    top: 20%
+    min-height: max-content
+    transition-duration: .35s
+    transition-delay: .1s
+    @include x-largue
+        display: flex
+    &:hover
+       // left: 0%
+    .content
+        height: inherit
+        background: #fff
+        padding-top: 1em
+        padding-bottom: 1em
+        .menu-lat
+            list-style: none
+            padding: 0
+            margin: 0
+            .menu-lat-item
+                margin: 0.25rem 0
+                padding: 0 1em
+    .name
+        height: inherit
+        background: $primary
+        color: #ffffff
+        padding-top: 1em
+        padding-bottom: 1em
+        .m-title
+            margin: 0
+            position: relative
+            white-space: nowrap
+            -webkit-writing-mode: vertical-rl
+            writing-mode: vertical-rl
+            top: 50%
+.menu-lateral.left
+    transition-property: left
+    left: -405px
+    width: 450px
+    &:hover
+        left: 0%
+    .content
+        width: 90%
+    .name
+        width: 10%
+        border-top-right-radius: 15px
+        border-bottom-right-radius: 15px
+        .m-title
+            -webkit-transform: rotate(180deg) translateY(50%)
+            transform: rotate(180deg) translateY(50%)
+            right: -5px
+.menu-lateral.right
+    transition-property: right
+    right: -305px
+    width: 350px
+    &:hover
+        right: 0%
+    .content
+        width: 87%
+    .name
+        width: 13%
+        border-top-left-radius: 15px
+        border-bottom-left-radius: 15px
+        .m-title
+            -webkit-transform: translateY(-50%)
+            transform: translateY(-50%)
+            left: 10px
+
+.section-comunicaciones
+    position: relative
+    .header-comunicaciones
+        text-align: center
+        padding: 45px 0
+        position: relative
+    .body-comunicaciones
+        position: relative
+        background: url("../images/homepage/bg-comunicaciones.jpg") no-repeat center
+        background-size: cover
+        background-attachment: fixed
+        background-position: top center
+        background-repeat: no-repeat
+        height: 100%
+        padding: 60px 0
+        position: relative
+        z-index: 3
+        color: #fff
+        &::after
+            content: ''
+            clear: both
+            position: absolute
+            background: rgba(0, 0, 0,.8 )
+            width: 100%
+            height: 100%
+            top: 0
+            z-index: -1
+        // Para la sección del citatorio
+        .citatorio
+            max-width: 1300px
+            width: 100%
+            margin: 10px auto
+            text-shadow: 1px 1px 1px #000
+            .content
+                font-size: 17px
+            a
+                color: #fff
+            strong, b
+                text-decoration: underline
+    .comision-comunicaciones
+        // max-width: 650px
+        width: 100%
+        padding: 0px
+        .carousel-comunicaciones
+            height: auto
+            overflow: hidden
+            border-radius: 14px
+            margin-bottom: 30px
+            @include movil
+                //margin-bottom: 30px
+            @include medium
+                margin-bottom: 30px
+            @include tablet
+                margin: 0px
+            &:hover
+                .slick-dots
+                    display: block !important
+            .slick-track
+                display: flex !important
+            .slick-slide
+                height: inherit !important
+            .slick-dots
+                bottom: 10px
+                display: none !important
+                li
+                    button
+                        &::before
+                            font-size: 20px
+            .item-comunicacion
+                overflow: hidden
+                background: #fff 
+                background-size: cover
+                background-position: center
+                padding: 15px 24px
+                border-radius: 14px
+                border: 2px solid
+                position: relative
+                display: flex
+                box-shadow: 0px -4px 10px rgba(0,0,0,.5)
+                @include tablet
+                    background: #fff url("../images/homepage/fondoComisionesCarousel.jpg") no-repeat center
+                @include x-largue
+                    padding: 35px 24px
+                .fotos
+                    align-items: center
+                    .foto
+                        text-align: center
+                .foto-senador
+                    display: block
+                    margin: 0 auto
+                    border-radius: 50%
+                    width: 150px
+                    height: 150px
+                    object-fit: cover
+                    @include medium
+                        width: 82px
+                        height: 82px
+                    @include desktop
+                        width: 150px
+                        height: 150px
+                    @include x-largue
+                        width: 150px
+                        height: 150px
+                .center-vertical
+                    position: relative
+                    @include movil
+                        position: relative
+                    @include desktop
+                        position: absolute
+                .two-senador
+                    width: 48%
+                    height: auto
+                    border-radius: 10px
+                    display: inline-block
+                .three-senador
+                    width: 42%
+                    height: auto
+                    border-radius: 10px
+                    display: inline-block
+                    margin-top: 2%
+                .default
+                    display: inline
+                    width: 100%
+                    height: 100%
+                    max-width: 70px
+                    max-height: 80px
+                    margin-bottom: 4px
+                    border-radius: 10px
+                .content
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    .link-carousel
+                        color: #000
+                        p
+                            position: relative
+                            &:nth-child(1)
+                                padding: 0px
+                                text-align: left !important
+                                @include medium
+                                    padding: 0 16px
+                            &:nth-child(2)
+                                padding-left: 0px
+                                @include medium
+                                    padding-left: 32px
+    .comision-permanente
+        background: url("../images/homepage/fondoComisionesPermanente.jpg") no-repeat center
+        background-size: cover
+        background-position: center
+        border-radius: 14px
+        padding: 22px 16px
+        color: #000
+        box-shadow: 0px -4px 10px rgba(0,0,0,.5)
+        .title-comision-permanente
+            margin-bottom: 5px
+            .image
+                width: 54px
+                height: 54px
+                display: inline-block
+            .firts
+                padding: 4px
+        .info-cp
+            position: relative
+            text-align: center
+            .list-container-cp
+                display: block
+                text-align: center
+                .list-cp
+                    display: inline-block
+                    margin: 4px 24px
+                    text-align: center
+                    &:hover
+                        a
+                            text-decoration: underline
+                            color: #010101
+.preseas
+    margin: 50px 0
+    .presea
+        position: relative
+        flex: 0 0 auto
+        width: 100%
+        padding-bottom: 24px
+        @include medium
+            width: 50%
+        @include tablet
+            flex: 0 0 auto
+            width: 50%
+        @include desktop
+            flex: 1 0 0%
+            width: auto
+            padding-bottom: 0px
+    .content-preseas
+        padding-top: 30px
+        .presea
+            a
+                &:hover
+                    color: #000
+                display: flex
+                align-items: center
+                @include tablet
+                    display: block
+                .title-presea
+                    padding: 8px
+                    font-size: 18px
+                    padding: 16px
+                    background: #fff
+                    border-radius: 12px
+                    margin-bottom: 0
+                    flex: 0 0 auto
+                    width: 82%
+                    order: 2
+                    flex-grow: 1
+                    @include tablet
+                        padding: 16px
+                        background: #fff
+                        border-radius: 12px
+                        margin-bottom: 1.5rem
+                        flex: unset
+                        width: auto
+                        order: unset
+                        flex-grow: unset
+                    @include desktop
+                        padding: 0 24px
+                        background: transparent
+                        border-radius: 0px
+                        margin-bottom: 1.5rem
+                .image
+                    width: 18%
+                    flex: 0 0 auto
+                    order: 1
+                    @include tablet
+                        display: block
+                        flex: unset
+                        width: 100%
+                        order: unset
+                    img
+                        max-width: 180px
+                        width: 100%
+                        display: block
+                        margin: 0 auto
+                        @include tablet
+                            display: block
+                        @include x-largue
+                            max-width: 190px
+            p.text-center
+                position: relative
+                a
+                    display: block
+                    width: 82%
+                    margin-left: auto
+                    @include movil
+                        width: 100%
+.convocatorias
+    background: #775D56 url("../images/homepage/web-bg-convocatorias-comunicaciones.jpg") no-repeat center
+    background-size: 137%
+    background-position: center
+    background-attachment: fixed
+    background-repeat: no-repeat
+    position: relative
+    overflow: hidden
+    padding: 40px 0
+    text-align: center
+    @include movil 
+        padding: 60px 0
+    @include medium
+        padding: 60px 0
+        text-align: left
+    @include tablet
+        padding: 60px 0
+    @include desktop
+        padding: 80px 0
+    @include x-largue
+        padding: 80px 0
+        
+    .cat-title
+        color: #fff
+        font-weight: 400
+        line-height: 1.35em
+        font-size: 32px
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1)
+        padding: 0 8px
+        margin-bottom: 0
+        text-align: center
+        @include medium
+            font-size: 32px
+        @include tablet
+            font-size: 38px
+            text-align: left
+        @include desktop
+            font-size: 42px
+        @include  x-largue
+            font-size: 45px
+
+    .btn
+        background-color: #fff
+        border-color: #fff
+        color: $primary
+        font-size: 22px
+        font-weight: 600
+        margin-bottom: 8px
+        box-shadow: 2px 3px 6px #000
+        text-align: left
+        margin-top: 20px
+        @include medium
+            font-size: 30px
+            text-align: center
+            margin-top: 0px
+        @include tablet
+            font-size: 38px
+            text-align: left
+        @include desktop
+            font-size: 22px
+        @include  x-largue
+            font-size: 22px
+
+
+.avisos-eventos
+    padding: 50px 0
+    background: #f7f7f7
+    .micro-slider
+        height: 480px
+        position: relative
+        width: 100%
+    .micro-slider.fullwidth
+        height: 480px
+        .slider-item
+            height: 480px
+            line-height: 480px
+            width: 100%
+    .slider-wrapper
+        overflow: hidden
+        position: relative
+        transform-style: preserve-3d
+        transform-origin: 0 50%
+        .slider-item
+            background: #FFF
+            box-shadow: 0px -2px 10px rgba(0,0,0,.5)
+            color: #FFF
+            display: none
+            font-size: 72px
+            height: 335px
+            line-height: 340px
+            left: 0
+            position: absolute
+            text-align: center
+            top: 0
+            width: 260px
+            cursor: pointer
+            img
+                width: 100%
+                height: auto
+    .indicators 
+        bottom: 0px
+        left: 50%
+        list-style-type: none
+        margin: 0 0 0 -77px
+        padding: 0
+        position: absolute
+        .indicator 
+            color: #fff
+            float: left
+            height: 16px
+            margin-right: 8px
+            text-align: center
+            width: 16px
+            &:last-child 
+                margin: 0
+            &:hover
+                a
+                    background: #ababab
+            a 
+                background: #FFF
+                border-radius: 8px
+                border: 1px solid #ababab
+                color: #FFF
+                display: inline-block
+                height: 16px
+                width: 16px
+                cursor: pointer
+        .active 
+            a
+                background: #ababab
+    .icono-calendario
+        text-align: center
+        margin-top: 30px
+        a
+            display: inline-block
+            font-size: 1.25em
+            border-bottom: 1px solid #b7b7b7
+            padding-bottom: 4px
+            border-top: 1px solid #b7b7b7
+            padding-top: 4px
+            &:hover
+                color: #000
+.igualdad-discriminacion
+    margin: 50px 0
+    .puntos
+        padding-top: 30px
+        .punto
+            display: block
+            line-height: 1.15em
+            margin-bottom: 10px
+            @include movil
+                padding-bottom: 8px 
+                font-size: 17px
+            @include medium
+                padding-bottom: 8px 
+                font-size: 17px
+                margin-bottom: 0px
+            @include tablet
+                padding-bottom: 8px 
+                font-size: 17px
+            @include desktop
+                font-size: 18px
+                padding-bottom: 8px 
+            @include x-largue
+                font-size: 20px
+                padding-bottom: 0px 
+        .pt-l
+            order: 2
+            @include medium
+                order: 2
+            @include tablet
+                order: unset
+        .pt-r
+            order: 3
+            @include medium
+                order: 3
+            @include tablet
+                order: unset
+        .pt-c
+            order: 1
+            text-align: center
+            @include medium
+                order: 1
+            @include tablet
+                order: unset
+            img
+                max-width: 100px
+                width: 100%
+                margin-bottom: 30px
+                @include movil
+                    max-width: 180px
+                @include medium
+                    max-width: 236px
+                    margin-bottom: 0px
+        .p1
+            text-align: left
+            padding-top: 0px
+            @include desktop
+                padding-top: 18px
+                text-align: right
+            @include x-largue
+                padding-top: 32px
+        .p2
+            text-align: left
+            padding-top: 0px
+            @include desktop
+                padding-top: 10px
+                text-align: right
+            @include x-largue
+                padding-top: 12px
+        .p3
+            text-align: left
+            padding-top: 0px
+            @include desktop
+                padding-top: 10px
+                text-align: right
+            @include x-largue
+                padding-top: 18px
+            
+        .p4
+            padding-top: 0px
+            @include desktop
+                padding-top: 30px
+            @include x-largue
+                padding-top: 42px
+        .p5
+            padding-top: 0px
+            @include desktop
+                padding-top: 50px
+            @include x-largue
+                padding-top: 85px
+
+.politicas-transparencia
+    padding: 50px 0
+    background: #f5f5f5
+    .titleHome
+        margin-bottom: 2.75rem
+    img
+        // box-shadow: 3px 3px 5px 0px rgba(128, 128, 128, .65)
+        transition: .7s ease
+        border-radius: 24px
+        margin-bottom: 24px
+        @include movil
+            margin-bottom: 24px
+        @include medium
+            margin-bottom: 24px
+        @include tablet
+            margin-bottom: 0
+        @include desktop
+            margin-bottom: 0
+        &:hover
+            -webkit-transform: scale(1.1)
+            -ms-transform: scale(1.1)
+            transform: scale(1.1)
+            transition: .7s ease
+    .content-menu
+        padding: 16px
+        background: rgba(243, 243, 243, 1)
+        background: -webkit-linear-gradient(180deg, rgba(243, 243, 243, 1), rgba(255, 255, 255, 1) 100%)
+        background: -o-linear-gradient(180deg, rgba(243, 243, 243, 1), rgba(255, 255, 255, 1) 100%)
+        background: -moz-linear-gradient(180deg, rgba(243, 243, 243, 1), rgba(255, 255, 255, 1) 100%)
+        background: linear-gradient(180deg, rgba(243, 243, 243, 1), rgba(255, 255, 255, 1) 100%)
+        box-shadow: 3px 3px 5px 0px rgba(128, 128, 128, 1)
+        border-radius: 14px
+        ul
+            list-style: none
+            padding-left: 0
+            li
+                padding: 6px 0
+                a
+                    font-size: 18px
+                    font-weight: 500
+                    &:hover
+                        text-decoration: underline
+                        color: #000
+    
+    .logos-transp
+        a
+            display: block
+.transparencia
+    background: #2a2a2a
+    .transp-rows
+        padding-top: 0px
+        .opc
+            position: relative
+            &:hover
+                background: #3a3a3a
+            .transp-item
+                // border-radius: 13px
+                // border-left: 15px solid rgba(128, 128, 128, 1)
+                // background: linear-gradient(180deg, rgba(239, 239, 239, 1), rgba(249, 249, 249, 1) 100%)
+                // box-shadow: 3px 1px 6px 0px rgba(128, 128, 128,.65)
+                a
+                    display: block
+                    position: relative
+                    height: inherit
+                    font-size: 20px
+                    font-weight: 500
+                    text-align: center
+                    padding: 16px 0px
+                    color: #fff
+                    @include desktop
+                        padding: 16px
+                    &:hover
+                        color: #fff
+                        text-decoration: none

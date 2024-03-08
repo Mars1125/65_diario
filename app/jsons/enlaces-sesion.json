@@ -1,0 +1,102 @@
+{
+	"enlaceGlobal":[
+		{
+			"OrdenDia":"./gaceta_del_senado/documento/140873"
+		}
+	],
+	"senadoRepublica": [
+		{
+			"fecha": "Sesión del miércoles 21 de febrero de 2024",
+			"status": true
+		},
+		{
+			"menu":[
+						{
+							"texto": "Orden del día",
+							"link":"./gaceta_del_senado/documento/140873"
+						},
+						{
+							"texto": "Versión Estenográfica",
+							"link":"./version_estenografica/2024_2_21/2384"
+						},
+						{
+							"texto": "Gaceta del Senado",
+							"link":"./gaceta_del_senado/"
+						},
+						{
+							"texto": "Marco Jurídico",
+							"link":"https://micrositios.senado.gob.mx/documentos_apoyo_parlamentario/marco-juridico.html"
+						},
+						{
+							"texto": "Asistencia",							
+							"link": "./documentos/Asistencia_21_febrero_2024.pdf"
+						},
+						{
+							"texto": "Sesión al Minuto",
+							"link":"./sesion_al_minuto"
+						},
+						{
+							"texto": "Votaciones",
+							"link": "./documentos/votacion_21_febrero_2024.pdf"
+						},
+						{
+							"texto": "Sesión en Vivo",
+							"link":"https://comunicacionsocial.senado.gob.mx/directo"
+						}
+				]
+
+		}
+	],
+	"comisionPermante":[
+		{
+			"fecha": "24 de agosto de 2023",
+			"status": false
+		},
+		{
+			"menu":[
+				{
+					"texto": "Orden del día",
+					"link":"./gaceta_comision_permanente/documento/137272"
+				},
+				{
+					"texto": "Versión Esténográfica",
+					"link":"./version_estenografica/2023_8_24/2338"
+				},
+				{
+					"texto": "Gaceta parlamentaria",
+					"link":"./gaceta_comision_permanente/"
+				},
+				{
+					"texto": "Marco Jurídico",
+					"link":"https://micrositios.senado.gob.mx/documentos_apoyo_parlamentario/marco-juridico.html"
+				},
+				{
+					"texto": "Asistencia",
+					"link":"./documentos/Lista_asistencia_24_AGOSTO_2023.pdf"
+				},
+				{
+					"texto": "Sesión al Minuto",
+					"link":"./sesion_al_minuto"
+				},
+				{
+					"texto": "Votaciones",
+					"link":"./documentos/Votacion_CP_martes_15_agosto_2023.pdf"
+				},
+				{
+					"texto": "Sesión en Vivo",
+					"link":"https://comunicacionsocial.senado.gob.mx/directo"
+				}
+			]
+		}			
+	]
+	
+}
+
+
+
+
+
+
+
+
+
